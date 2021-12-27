@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body style="background-color: burlywood;">
+    <h1 style="text-align: center;">Imagens dinâmicas</h1>
+
+    <p>Primeiro gerar 3 imagens (P,M e G) para celular, tablet e computador, respectivamente, no Gimp.</p>
+    <hr>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente ou diminua o seu navegador.</p>
+    <hr>
+    <picture>
+        <source media="(max-width: 750px)" srcset="img/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="img/foto-m.png" type="image/png">
+        <img src="./img/foto-g.png" alt="imagem flexivel">
+    </picture>
+<hr>
+<p>Para alterar o tamanho é preciso incluir de cima para baixo na tag source os tamanhos das imagens (do mínimo para o máximo das imagens) conforme código no arquivo .index </p>
+
+    <h2 style="text-align: center;">Inserir mídia</h2>
+    <p>Aprendendo a reproduzir áudio em HTML5.</p>
+    <audio src="./media/Root - Silent Partner.mp3" controls loop ></audio>
+   <p>Para que o play comece quando o navegador entrar inclui o CONTROLS e o AUTOPLAY</p>
+
+   <p>
+       Opções de inicialização do áudio:
+       <ul>
+           <li>Preload: metadata pega as informações do arquivo, como tempo. Quando aperta o play demora um pouco a começar a tocar pq começa a carregar. </li>
+           <li>Preload: none não carrega nada</li>
+           <li>Preload: auto só começa depois de carregar tudo.</li>
+           <li>Load: recomeça o áudio.</li>
+           <li>Autoplay começa a tocar assim que carrega a página.</li>
+       </ul>
+   </p>
+    <hr>
+    <h2 style="color:rgb(88, 88, 224)" >Inserir vídeo</h2>
+    <p>Esse vídeo está hospedado no meu servidor.</p>
+
+    <video src="./video/video1.mp4" controls autoplay loop width="430px" height="300px"></video>
+
+    <p>Outra forma de inserir o vídeo.</p>
+    <p>Dessa forma, dentro do source pode incluir os vídeos com extensões diferentes. Muda na TYPE para outros navegadores.</p>
+
+    <video controls width="430px" height="300">
+        <source src="./video/video1.mp4" type="video/mp4">
+    </video>
+
+    <p>E ainda tem incluir vídeo hospedado em outro servidor, como o youtube ou vimeo. Para isso é só ir no canal, no vídeo, clicar em incorporar e copiar o código:</p>
+
+    <iframe width="460" height="215" src="https://www.youtube.com/embed/IGTJyeSGrzI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <p>
+        Tipos de extensão de vídeo para hospedagem:
+        <ul>
+            <li>mp4</li>
+            <li>m4v</li>
+            <li>webm</li>
+            <li>ogv</li>
+        </ul>
+    </p>
+
+</body>
+</html>
