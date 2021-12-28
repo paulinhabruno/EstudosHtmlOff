@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            background-color: rgb(211, 200, 200);
+        }
+
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{
+            color: royalblue;
+        }
+
+        a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+
+        a:active{
+            color: yellow;
+        }
+
+        a::before{
+            content: "É importante você clicar: ";
+        }
+
+        a::after{ /*adiciona algo */
+            content: ' [ LINK]';
+            text-decoration: none;
+            font-weight: normal;
+            color: rgb(17, 112, 22);
+        }
+
+        .especial{
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li> <a href="https://github.com/paulinhabruno" class="especial">Repositório Github</a> </li>
+        <li> <a href="https://www.linkedin.com/in/paula-bruno/">Linkedin</a></li>
+        <li> <a href="https://www.facebook.com/PaulinhaRJ">Facebook</a></li>
+    </ul>
+
+    <h1>Pseudo elemento</h1>
+    <p>O pseudo elemento é indicado com :: (duas vezes dois pontos)</p>
+
+    <h2 style="background-color: chartreuse;">Relembrando</h2>
+    <ol>
+        <li># = id</li>
+        <li>. = class</li>
+        <li>: = pseudo-elemento</li>
+        <li>:: = pseudo-classe</li>
+        <li>> = children / filho</li>
+    </ol>
+</body>
+</html>
