@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: cadetblue;
+            padding: 20px;
+        }
+
+        header{
+            width: auto;
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 0px 20px;
+            box-shadow: 2px 1px 4px rgba(146, 141, 141, 0.37);
+            
+        }
+
+        nav{
+            background-color: rgb(154, 224, 197);
+            padding: 3px;
+            text-align: right;
+        }
+
+        nav > a {
+            text-decoration: none;
+            font-weight: bold;
+            color: rgb(7, 90, 72);
+            margin-right: 15px;
+            box-shadow: 2px 1px 4px rgba(146, 141, 141, 0.37);
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        h1{
+            box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.336);
+        }
+        article{
+            background-color: rgb(194, 228, 217);
+        }
+
+        article > aside {
+            background-color: rgb(150, 212, 199);
+        }
+        footer{
+            text-align: center;
+            font-style: italic;
+            background-color: black;
+            color: white;
+            padding: 0px;
+            margin: 0px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grouping tags</h1>
+    <p>Antigamente usava-se apenas as DIVS, agora é mais semântico.</p> 
+    <p>Tipos de grouping tags:</p>
+    <ul>
+        <li>header: cabeçalho que fica dentro do body</li>
+        <li>main: parte principal do site.</li>
+        <li>footer: rodapé</li>
+    </ul>
+    <hr>
+    <h4>Começando o exercício</h4>
+    <hr>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Serviços</a>
+            <a href="#">Produtos</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assunto">
+            <nav>
+                <a href="#">Romance</a>
+                <a href="#">Policial</a>
+                <a href="#">Terror</a>
+                <a href="#">Drama</a>
+                <a href="#">Comédia</a>
+            </nav>
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h1>Notícias fresquinhas da Literatura Nacional</h1>
+                <h2>Leia tudo aqui.</h2>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum exercitationem, sequi magnam quae ad tempora, ab cum fugiat iusto rerum eligendi molestiae ullam, cupiditate nulla sit voluptatem omnis odio! Fugiat ducimus nulla inventore in magnam laborum saepe fugit dolorem atque!
+                </p>
+                <aside>
+                    <p>Artigo escrito por Paula.</p>
+                </aside>
+            </article>
+
+        </section>
+
+    </main>
+    <footer>
+        <p>Desenvolvido pela Paulinha.</p>
+    </footer>
+
+</body>
+</html>

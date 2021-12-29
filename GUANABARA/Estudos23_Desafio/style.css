@@ -1,0 +1,140 @@
+@charset "UTF-8";
+@font-face {
+    font-family: idroid;
+    src: url(./fontes/idroid.otf); 
+    format: otf;
+}
+
+:root{
+    --cor01: #88DBAD;
+    --cor02: #4AD488;
+    --cor03: #389F66;
+    --cor04: #2F8757;
+    --cor05: #268752;
+}
+
+body{
+    min-width: 400px;
+    max-width: 800px;
+    background-color: var(--cor01);
+    padding: 10px;
+    margin: auto;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    text-align: center;
+    background-image: linear-gradient(to bottom, #4AD488, #268752, #389F66);
+    background-attachment: fixed;
+    color: white;
+    padding: 20px;
+    margin: 0px 0px 0px 0px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.281);
+}
+
+nav{
+    background-color: var(--cor03);
+    color: rgb(252, 249, 249);
+    text-align: left;
+    padding: 5px;
+}
+
+section{
+    background-color: white;
+    padding: 0px 10px 0px 10px;
+}
+
+#section01{
+    padding: 30px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    padding: 13px;
+    
+}
+
+h1{
+    font-family: idroid;
+    font-size: 25px;
+    color: var(--cor04);  
+    padding: 10px;
+}
+
+#historia{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: transparent;
+}
+
+
+h2{
+    font-family: idroid;
+    color: var(--cor05);
+    background-image: linear-gradient( to right, #7eb99983, #ffffff);
+    padding: 10px;
+}
+
+p{
+    text-indent: 20px;
+    line-height: 1.2em;
+    text-align: justify;
+}
+
+
+div.video{
+    position: relative;
+    height: 0px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: 15px;
+
+    padding-bottom: 59%;
+    background-color: #197543;   
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+#aprender1{
+    background-color: white;
+    padding: 10px;
+}
+
+#aprendertop{
+    background-color: var(--cor03);
+    color: white;
+    padding: 5px;
+    border-radius: 5px 5px 0px 0px;
+}
+#aprender2{
+    background-color: var(--cor01);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#irina{
+    height: 100%;
+    width: 100%;
+    
+}
+
+ul{
+    list-style-type: '\2714\0020\0020';
+    columns: 2;
+    list-style-position: inside;
+}
+footer{
+    background-color: #197543;
+    color: white;
+
+    text-align: center;
+    
+}
