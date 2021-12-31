@@ -19,7 +19,6 @@ body{
     background-color: var(--cor01);
     padding: 10px;
     margin: auto;
-
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -29,31 +28,49 @@ header{
     background-attachment: fixed;
     color: white;
     padding: 20px;
+    border-radius: 3px 3px 0px 0px;
     margin: 0px 0px 0px 0px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.281);
 }
 
 nav{
     background-color: var(--cor03);
-    color: rgb(252, 249, 249);
     text-align: left;
     padding: 5px;
+    cursor: all-scroll; 
+    border-radius: 0px 0px 3px 3px;  
+}
+
+nav > a{
+    padding: 10px;
+}
+
+nav >:hover{
+    background-color: var(--cor01);
+    padding: 7px;
+    transition: 0.5s;
+    border-radius: 2px;
 }
 
 section{
     background-color: white;
     padding: 0px 10px 0px 10px;
+    box-shadow: 0px 0px 4px black;
+    border-radius: 3px;
 }
 
 #section01{
     padding: 30px;
+    box-shadow: 0px 0px 0px 0px;
 }
 
 a{
-    color: white;
-    text-decoration: none;
-    padding: 13px;
-    
+    color: var(--cor04);
+    text-decoration: none; 
+}
+
+a.externo::after{
+    content: '\00A0\1F517';
 }
 
 h1{
@@ -120,10 +137,22 @@ div.video > iframe {
     padding: 5px;
 }
 
+#robos > img{
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #irina{
     height: 100%;
     width: 100%;
     
+}
+
+#bugdroid{
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
 }
 
 ul{
@@ -131,10 +160,8 @@ ul{
     columns: 2;
     list-style-position: inside;
 }
-footer{
+footer > p{
     background-color: #197543;
     color: white;
-
-    text-align: center;
-    
+    text-align: center;    
 }
